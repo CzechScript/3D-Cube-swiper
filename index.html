@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img1.jpg" alt="Photo by Jaclyn Moy on Unsplash">
+                </div>
+                <div class="content">
+                    <h2>John Canpenter<br><span>Web Designer</span></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img2.jpg" alt="Photo by Jonathan Adams on Unsplash">
+                </div>
+                <div class="content">
+                    <h2>Karal Johonson<br><span>Web Developer</span></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img3.jpg" alt="Photo by KAL VISUALS on Unsplash">
+                </div>
+                <div class="content">
+                    <h2>Jessie Konstanin<br><span>Social Resources</span></h2>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img4.jpg" alt="Photo by Denerio Watkis on Unsplash">
+                </div>
+                <div class="content">
+                    <h2>Henri Phamer<br><span>Team Leader</span></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img5.jpg" alt="Photo by Nonsap Visuals on Unsplash">
+                </div>
+                <div class="content">
+                    <h2>Alex Lukas<br><span>Web Designer</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
